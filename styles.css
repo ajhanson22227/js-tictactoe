@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+
+/*GRID CLASSES*/
+#grid-container{
+	border: 1px solid red;
+	display: grid;
+
+	height: 30em;
+	width: 30em;
+	margin: auto;
+
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-square{
+	background-color: red;
+	display: flex;
+	justify-content: center;
+  	flex-direction: column;
+  	text-align: center;
+
+  	font-family: 'Pacifico', cursive;
+  	font-size: 64px;
+	border: 1px solid black;
+}
+
+#current-player-status{
+	border: 1px solid red;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	width: 30rem;
+	height: 5rem;
+	margin: auto;
+
+	font-size: 32px;
+}
+
+#reset-button-container{
+	display: flex;
+	width: 50%;
+	margin: auto;
+}
+
+#restart-button{
+	display: block;
+	margin: auto;
+}
+
+#new-game-button{
+	display: block;
+	margin: auto;
+}
